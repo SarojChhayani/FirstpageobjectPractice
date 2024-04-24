@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class ShoppingCart extends Utils {
-    String expectedproductname = getTextFromElement(By.xpath("//*[@id=\"product-details-form\"]/div[2]/div[1]/div[2]/div[1]/h1"));
+    String expectedproductname = "Build your own computer";
 
 
     public void addtocartproduct() {
