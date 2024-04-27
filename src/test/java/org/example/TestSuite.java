@@ -1,6 +1,7 @@
 package org.example;
 
 
+import org.checkerframework.checker.units.qual.C;
 import org.testng.annotations.Test;
 
 public class TestSuite extends BaseTest {
@@ -9,6 +10,9 @@ public class TestSuite extends BaseTest {
     RegisterResultPage registerResultPage= new RegisterResultPage();
     LoginPage loginPage = new LoginPage();
     Electronics electronics = new Electronics();
+    CameraAndPhoto cameraAndPhoto = new CameraAndPhoto();
+    LeicaTMirrorlessDigitalCamera leicaTMirrorlessDigitalCamera=new LeicaTMirrorlessDigitalCamera();
+    ProductEmailAFriend productEmailAFriend =new ProductEmailAFriend();
     BuildYourownComputer buildYourownComputer = new BuildYourownComputer();
     ShoppingCart shoppingCart = new ShoppingCart();
 
@@ -48,8 +52,14 @@ public class TestSuite extends BaseTest {
         homePage.clickonLoginPage();
         //Enter login Details
         loginPage.loginDetails();
-        //Refer a product to friend
-        electronics.referaproducttofriend();
+        //Click On Camera & Photo
+        electronics.clickOnCameraandPhoto();
+        //Click On Product
+        cameraAndPhoto.ClickOnProduct();
+        //Click On Email A Friend
+        leicaTMirrorlessDigitalCamera.clickOnEmailAFriend();
+        //Refer A Product To friend By Email
+        productEmailAFriend.productReferAFriend();
     }
     @Test
     public void veryfyuesrshouldbeabletoaddtocartprodut(){

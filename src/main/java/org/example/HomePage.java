@@ -12,5 +12,9 @@ public void clickonLoginPage(){
 public void clickOnFeaturedproducts(){
     clickOnElement(By.linkText("Build your own computer"));
 }
+public void clickOnElectronics(){
+    //Click on Electronics option from top bar
+    clickOnElement(By.xpath("//ul[@class='top-menu notmobile']//a[normalize-space()='Electronics']"));
 
+}
 }
